@@ -1,11 +1,12 @@
 HTB Starting Point – Meow
-
 Difficoltà: Very Easy
 Data: 13/11/2025
+Durata: 2:20 – 2:53
 
 Connessione alla VPN
 
-Il file .ovpn è stato scaricato nella directory sf_shared della VM Kali Linux. La connessione alla rete HTB è stata avviata tramite:
+Il file .ovpn è stato scaricato nella directory sf_shared della VM Kali Linux.
+La connessione alla rete HTB è stata avviata tramite:
 
 sudo openvpn --config /media/sf_Shared/starting_point_ctrlxrico.ovpn --daemon
 
@@ -22,7 +23,7 @@ Stato: Corretta.
 
 Task 2
 
-Domanda: Strumento utilizzato per impartire comandi al sistema operativo tramite riga di comando.
+Domanda: Strumento utilizzato per impartire comandi tramite riga di comando.
 Risposta: Terminal.
 Stato: Corretta.
 
@@ -83,16 +84,17 @@ Stato: Corretta.
 
 Task 8 – Root Flag
 
-L’accesso è stato stabilito tramite Telnet sulla porta 23:
+Connessione effettuata tramite Telnet sulla porta 23:
 
 telnet 10.129.1.17
 Meow login: root
 
 
-Una volta ottenuta la shell, la flag è stata letta dalla home directory di root:
+Una volta ottenuto l’accesso, ho letto la flag nella home directory:
 
 root@Meow:~# ls
 flag.txt  snap
+
 root@Meow:~# cat flag.txt
 b40abdfe23665f766f9c61ecba8a4c19
 
