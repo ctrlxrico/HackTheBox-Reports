@@ -1,7 +1,6 @@
 HTB Starting Point – Meow
 Difficoltà: Very Easy
 Data: 13/11/2025
-Durata: 2:20 – 2:53
 
 Connessione alla VPN
 
