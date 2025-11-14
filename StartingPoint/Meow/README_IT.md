@@ -1,6 +1,9 @@
 HTB Starting Point – Meow
+
 Difficoltà: Very Easy
 Data: 13/11/2025
+
+--
 
 Connessione alla VPN
 
@@ -13,33 +16,36 @@ sudo openvpn --config /media/sf_Shared/starting_point_ctrlxrico.ovpn --daemon
 IP assegnato: 10.10.14.13
 Target: 10.129.1.17
 
+---
+
 Task di Verifica
-Task 1
+Task 1 – Significato dell'acronimo VM
 
-Domanda: Significato dell'acronimo VM.
-Risposta: Virtual Machine.
-Stato: Corretta.
+Risposta: Virtual Machine
+Stato: Corretta
 
-Task 2
+---
 
-Domanda: Strumento utilizzato per impartire comandi tramite riga di comando.
-Risposta: Terminal.
-Stato: Corretta.
+Task 2 – Strumento per impartire comandi tramite CLI
 
-Task 3
+Risposta: Terminal
+Stato: Corretta
 
-Domanda: Servizio utilizzato per la connessione VPN nei laboratori HTB.
-Risposta: OpenVPN.
-Stato: Corretta.
+---
 
-Task 4
+Task 3 – Servizio utilizzato per la connessione VPN in HTB
 
-Domanda: Strumento utilizzato per inviare una richiesta ICMP di eco al target.
-Risposta: Ping.
-Stato: Corretta.
+Risposta: OpenVPN
+Stato: Corretta
 
-Evidenza:
+---
 
+Task 4 – Strumento utilizzato per inviare richieste ICMP Echo
+
+Risposta: Ping
+Stato: Corretta
+
+Evidenza
 ping -c 5 10.129.1.17
 PING 10.129.1.17 (10.129.1.17) 56(84) bytes of data.
 64 bytes from 10.129.1.17: icmp_seq=1 ttl=63 time=61.0 ms
@@ -51,14 +57,14 @@ PING 10.129.1.17 (10.129.1.17) 56(84) bytes of data.
 5 packets transmitted, 4 received, 20% packet loss, time 4008ms
 rtt min/avg/max/mdev = 60.434/60.684/60.993/0.235 ms
 
-Task 5
+---
 
-Domanda: Strumento più comune per individuare porte aperte su un target.
-Risposta: Nmap.
-Stato: Corretta.
+Task 5 – Strumento più comune per la scansione delle porte
 
-Evidenza:
+Risposta: Nmap
+Stato: Corretta
 
+Evidenza
 nmap 10.129.1.17
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-11-13 02:34 CET
 Nmap scan report for 10.129.1.17
@@ -69,17 +75,21 @@ PORT   STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 1.23 seconds
 
-Task 6
+---
 
-Domanda: Servizio individuato sulla porta 23/tcp.
-Risposta: Telnet.
-Stato: Corretta.
+Task 6 – Servizio individuato sulla porta 23/tcp
 
-Task 7
+Risposta: Telnet
+Stato: Corretta
 
-Domanda: Nome utente che può accedere tramite Telnet con password vuota.
-Risposta: root.
-Stato: Corretta.
+---
+
+Task 7 – Utente che può accedere via Telnet senza password
+
+Risposta: root
+Stato: Corretta
+
+---
 
 Task 8 – Root Flag
 
@@ -89,7 +99,7 @@ telnet 10.129.1.17
 Meow login: root
 
 
-Una volta ottenuto l’accesso, ho letto la flag nella home directory:
+Una volta ottenuto l’accesso, la flag è stata letta dalla home directory di root:
 
 root@Meow:~# ls
 flag.txt  snap
@@ -97,6 +107,11 @@ flag.txt  snap
 root@Meow:~# cat flag.txt
 b40abdfe23665f766f9c61ecba8a4c19
 
-
 Flag: b40abdfe23665f766f9c61ecba8a4c19
-Stato: Corretta.
+Stato: Corretta
+
+---
+
+Note
+
+La macchina evidenzia il rischio legato all'esposizione di servizi Telnet non protetti e accessibili con credenziali predefinite.
