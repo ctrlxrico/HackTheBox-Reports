@@ -112,3 +112,9 @@ Stato: Corretta
 ## Note
 
 Questa macchina evidenzia i rischi derivanti da servizi Telnet esposti con credenziali di default o vuote.
+
+---
+
+## Author
+
+Report by delerico
