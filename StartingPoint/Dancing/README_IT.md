@@ -2,8 +2,6 @@
 
 Difficoltà: Very Easy  
 Data: 14/11/2025  
-Ora inizio: 21:07  
-Ora fine: 21:30
 
 ---
 
@@ -155,3 +153,9 @@ Stato: Corretta
 
 La macchina mostra i rischi legati a condivisioni SMB non protette, accessibili senza autenticazione.  
 L’esposizione della porta 445 insieme all’accesso anonimo rende possibile navigare nelle directory interne e recuperare file sensibili.
+
+---
+
+## Author
+
+Report by delerico
