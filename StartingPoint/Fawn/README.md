@@ -2,8 +2,6 @@
 
 Difficulty: Very Easy  
 Date: 14/11/2025  
-Start Time: 18:50  
-Finish Time: 19:38
 
 ---
 
@@ -181,3 +179,9 @@ Status: Correct
 
 This machine demonstrates the risks associated with misconfigured FTP services, particularly when anonymous access is enabled.  
 It highlights how basic enumeration and simple FTP interactions can expose sensitive files.
+
+---
+
+## Author
+
+Report by delerico
