@@ -2,7 +2,6 @@
 
 Difficoltà: Very Easy  
 Data: 14/11/2025  
-Orario: 18:50 – 19:38
 
 ---
 
@@ -180,3 +179,9 @@ Stato: Corretta
 
 Questa macchina evidenzia i rischi legati alla configurazione errata dei server FTP, soprattutto quando l’accesso anonimo è abilitato.  
 Dimostra come una semplice enumerazione possa permettere l’accesso a file sensibili.
+
+---
+
+## Author
+
+Report by delerico
