@@ -2,8 +2,6 @@
 
 Difficulty: Very Easy  
 Date: 14/11/2025  
-Start time: 21:07  
-End time: 21:30
 
 ---
 
@@ -155,3 +153,9 @@ Status: Correct
 
 This machine demonstrates the security risks of misconfigured SMB shares, especially when anonymous access is allowed.  
 The exposure of port 445 combined with unrestricted access enables directory traversal and retrieval of sensitive files.
+
+---
+
+## Author
+
+Report by delerico
