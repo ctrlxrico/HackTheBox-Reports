@@ -112,3 +112,9 @@ Status: Correct
 ## Notes
 
 This machine demonstrates the risks of running Telnet services with default or empty credentials.
+
+---
+
+## Author
+
+Report by delerico
